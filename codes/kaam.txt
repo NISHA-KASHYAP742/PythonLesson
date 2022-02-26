@@ -1,0 +1,76 @@
+
+NO RETURN NO ARG
+
+#include <stdio.h>
+void area(void);
+int main()
+{
+    area();
+    return 0;
+}
+void area(void)
+{
+    float length,width,area;
+    printf("Enter the value of length and width \n");
+    scanf("%f %f",&length,&width);
+    area=length*width;
+    printf("the area of rectangle is equals to =%f",area);
+}
+
+
+
+// with argument no return//
+#include <stdio.h>
+void area_circle(float);
+int main()
+{
+    float radius;
+    printf("enter radius \n");
+    scanf("%f",&radius);
+    area_circle(radius);
+    return 0;
+}
+void area_circle(float radius)
+{
+    float area;
+    area=3.14*radius*radius;
+    printf("addition=%f",area);
+}
+
+// with return no argument//
+#include <stdio.h>
+float area_sq(void);
+int main()
+{
+    float area1;
+    area1=area_sq();
+    printf("the area of square=%f",area1);
+    return 0;
+}
+float area_sq()
+{
+    float side,area;
+    printf("enter the side");
+    scanf("%f",&side);
+    area=side*side;
+    return(area);
+}
+
+// with return with argument//
+#include <stdio.h>
+float circum(float);
+int main()
+{
+    float radius,circumference;
+    printf("\n enter the radius of circle");
+    scanf("%f",&radius);
+    circumference=circum(radius);
+    printf("\n circumference of circle =%f",circumference);
+    return 0;
+}
+float circum(float radius)
+{
+    float circum;
+    circum=2*3.14*radius;
+    return(circum);
+}
